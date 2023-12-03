@@ -1,0 +1,27 @@
+main:
+  - name: "News"
+    url: news
+    weight: 1
+  - name: "Team"
+    url: "/team/"
+    weight: 2
+  - name: "Research"
+    url: "/research/"
+    weight: 3
+  - name: "Publications"
+    url: publications
+    weight: 4
+  - name: "About"
+    url: "/about/"
+    weight: 5
+  - name: "Contact"
+    url: "/contact/"
+    weight: 6
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Contact"
+    url: "/contact/"
+    weight: 2

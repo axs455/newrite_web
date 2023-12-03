@@ -1,0 +1,107 @@
+baseurl: 'https://newrite.engineering.iastate.edu/'
+permalink: pretty
+title: 'NEWRITE'
+
+logo:
+  mobile: "images/logo/MsRI_logo.svg"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/MsRI_logo.svg"
+  desktop_height: "48px"
+  desktop_width: "200px"
+
+home: 
+  limit_services: 6
+
+collections:
+  services:
+    output: true
+    sort_by: weight
+  team:
+    output: true
+    sort_by: weight
+  tasks:
+    output: true
+    sort_by: weight
+
+defaults:
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+      aside:
+        toc: true
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
+      aside:
+        toc: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: "page"
+      permalink: news/:year/:title
+      aside:
+        toc: true
+
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+
+plugins:
+  - jekyll-environment-variables
+  - jekyll/scholar
+  - jekyll-feed
+  - jekyll-toc
+
+# TOC
+toc:
+  selectors: # "h1,h2,h3" (default)
+  min_level: 2
+  max_level: 6
+  ordered_list: true
+  no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: section-nav
+  sublist_class: ''
+  item_class: toc-entry
+  item_prefix: toc-
+
+
+# Jekyll-scholar
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: year, month
+  order: descending
+
+  #group_by: type
+  #group_order: descending
+
+  #bibtex_filters: latex,smallcaps,superscript
+  source: ./_bibliography
+  bibliography: papers.bib
+  bibliography_template: bibtemplate
+
+  replace_strings: true
+  join_strings:    true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md

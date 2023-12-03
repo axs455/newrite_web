@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Tornadoes",
+    "description": "Modeling tornadoes",
+    "image": {
+      "url": "images/features/tornado.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Downbursts",
+    "description": "Modeling downbursts",
+    "image": {
+      "url": "images/features/downburst.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Gust fronts",
+    "description": "Modeling gustfronts",
+    "image": {
+      "url": "images/features/gustfront.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]

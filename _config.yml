@@ -1,4 +1,5 @@
-baseurl: 'https://newrite.engineering.iastate.edu/'
+url: "https://newrite.engineering.iastate.edu"
+baseurl:
 permalink: pretty
 title: 'NEWRITE'
 
@@ -9,6 +10,7 @@ logo:
   desktop: "images/logo/MsRI_logo.svg"
   desktop_height: "48px"
   desktop_width: "200px"
+  url: "https://newrite.engineering.iastate.edu"
 
 home: 
   limit_services: 6
